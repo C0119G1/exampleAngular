@@ -1,0 +1,22 @@
+<table class="table table-striped">
+    <thead>
+       <tr>
+           <td>name</td>
+           <td>tuổi</td>
+           <td>Ngày tạo</td>
+           <td>Trạng thái</td>
+       </tr>
+    </thead>
+    <tbody>
+           <tr *ngFor="let employ of employees">
+               <td>{{employ.name}}</td>
+               <td>{{employ.age}}</td>
+               <td>{{employ.createdAt |date}}</td>
+               <td>{{employ.status}}</td>
+               <a [routerLink]="['/employess-detail',employ.id]">Detail</a>
+
+           </tr> 
+           <td>
+           </td>
+    </tbody>
+</table>

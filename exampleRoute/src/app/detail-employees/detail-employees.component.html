@@ -1,0 +1,10 @@
+<table class="table">
+    <tr *ngIf="employees">
+<td>{{employees.name}}</td>
+<td>{{employees.age}}</td>
+<td>{{employees.createdAt |date}}</td>
+<td>{{employees.status}}</td>
+</tr>
+</table>
+<a [routerLink]="['overprew']"class="btn-dark">Oveprew</a>
+<a [routerLink]="['project']">project</a>
